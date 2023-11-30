@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Alquiler de productos</title>
+    <link rel="stylesheet" href="estiloalquiler.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html"> PAGINA PRINCIPAL</a></li>
+        
+
+    </ul>
+</nav>
+<br>
+<h3>Con respecto al alquiler de estos productos, nosotros te entregaremos un contrato donde se firmara el acuerdo que tiene que
+  volver en buenas condiciones y se lo llevan por mes. Tendran entre 5 y 6 dias pasado el mes para que devuelvan el producto.
+ Si pasan mas de 10 dias, deberan abonar nuevamente el alquiler. </h3>
+
+ 
+
+     <h1> SILLA DE RUEDAS:</h1>
+    <img class="auto" src="IMAGENES/SILLARUEDAS.jpg" alt="">
+    <div>
+    <p class="par"> Caracteristicas: </p>
+    <BR>
+    <p > .Plegable </p>
+    <p> .Soporta hasta 120 kg</p>
+    <p>.Incorpora reposabrazos y reposapies</p>
+    <br>
+    <BR>
+    <p> PRECIO POR MES: $5000</p>
+    
+    </div>
+
+    <br>
+    <br>
+  
+    <h1>MULETAS:</h1>
+    <div>
+    <img class="auto" src="IMAGENES/mmuleta.jpg" alt="">
+    <p class="par"> Caracteristicas:  </p>
+    <BR>
+    <p class=> .Resistente</p>
+    <p>.ligera</p>
+    <p>.De aluminio</p>
+    <br>
+    <p> PRECIO POR MES: $4000</p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <h1> ANDADOR:</h1>
+    <img class="auto" src="IMAGENES/andador.jpg" alt="">
+    <div>
+    <p class="par"> Caracteristicas: </p>
+    <BR>
+    <p>.Peso maximo: 100 kg</p>
+    <p>.Plegable</p>
+    <p>.Regulacion de altura</p>
+    <br>
+    <p>PRECIO POR MES: $4000</p>
+    
+    </div>
+       
+    
+    <br>
+    <br>
+    <br>
+ 
+ 
+    <h1> BOTA:</h1>
+    <img class="auto" src="IMAGENES/bota.jpg" alt="">
+    <div>
+    <p class="par"> Caracteristicas: </p>
+    <BR>
+    <p>.Protege huesos fracturados</p>
+    <p>.Protege lesiones</p>
+    <p>.Alta</p>
+    <br>
+    <p>PRECIO POR MES: $4000</p>
+    
+    </div>
+
+    <br>
+    <br>
+
+
+
+    <h1> BASTON:</h1>
+    <img class="auto" src="IMAGENES/imagen baston.jpg">
+    <div>
+    <p class="par"> Caracteristicas: </p>
+    <br>
+    <p>.Peso maximo: 100 kg</p>
+    <p>.No plegable</p>
+    <p>.Regulable</p>
+    <br>
+    <p>PRECIO POR MES: $4000</p>
+    
+    </div>
+    <br>
+    <br>
+    
+    <h2>ALQUILAR PRODUCTOS:</h2>
+    <form id="formularioAlquiler">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="producto">Producto:</label>
+        <select id="producto" name="producto" required>
+          <option value="sillaDeRuedas">Silla de Ruedas</option>
+          <option value="muletas">Muletas</option>
+          <option value="andador">Andador</option>
+          <option value="bota">Bota</option>
+          <option value="baston">Bastón</option>
+      </select>
+  
+
+        <label for="duracion">Duración (en días):</label>
+        <input type="number" id="duracion" name="duracion" required>
+
+        <button type="button" onclick="alquilarProducto()">Alquilar</button>
+    </form>
+    <br>
+    <div id="mostrar_factura"></div>
+    <script src="formulario.js"></script>
+    <script>
+      // Aca llamo a esta funcion que sirven para mostrar los productos en el formulario
+      mostrarProductosEnFormulario();
+  </script>
+
+
+</body>
+</html>
